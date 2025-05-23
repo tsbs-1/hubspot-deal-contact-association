@@ -1,0 +1,28 @@
+projectConfig:
+  name: deal-contact-association
+  srcDir: src
+  platformVersion: ui-extensions-4.1
+
+environments:
+  default:
+    sandboxAccountId: YOUR_SANDBOX_ACCOUNT_ID
+    personalAccessKey: YOUR_PERSONAL_ACCESS_KEY
+  
+  prod:
+    portalId: YOUR_PRODUCTION_PORTAL_ID
+    personalAccessKey: YOUR_PRODUCTION_PERSONAL_ACCESS_KEY
+
+# セキュリティ設定
+secrets:
+  - HUBSPOT_PRIVATE_APP_ACCESS_TOKEN
+
+# ビルド設定
+build:
+  optimizeForProduction: true
+  minify: true
+  sourceMap: false
+
+# ログ設定
+logging:
+  level: info
+  enableConsoleLogging: true
